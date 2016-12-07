@@ -1,9 +1,9 @@
 using Xunit;
 using System;
 using System.Collections.Generic;
-using ToDo.Objects;
 using System.Data;
 using System.Data.SqlClient;
+using ToDo.Objects; // Not needed always
 
 namespace  ToDo
 {
@@ -11,10 +11,8 @@ namespace  ToDo
   {
     public ToDoTest()
     {
-      DBConfiguration.ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=todo_test;Integrated Security=SSPI;";
+      DBConfiguration.ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=ToDo_test;Integrated Security=SSPI;";
     }
-
-
 
     [Fact]
     public void Save_SavesToDatabase_true()

@@ -1,9 +1,9 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace ToDo
+namespace ToDo // same as database name
 {
-  public class DB
+  public class DB // This is the DB class which will let us manage our database in our application
   {
     public static SqlConnection Connection()
     {
